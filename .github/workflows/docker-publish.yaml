@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - run: git branch
       - name: Set variabless
         run: |
           echo "FUSIONAUTH_VERSION=$(cat docker/fusionauth/release-trigger | grep version= | awk -F= {'print $2'})" >> $GITHUB_ENV
