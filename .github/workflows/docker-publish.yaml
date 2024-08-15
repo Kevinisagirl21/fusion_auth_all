@@ -1,9 +1,6 @@
 name: Publish Docker
 on:
   push:
-    branches:
-      - main
-      - 1.52.0.maintenance
     paths:
       - 'docker/fusionauth/release-trigger'
 concurrency: docker-concurrency-group
